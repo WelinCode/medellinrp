@@ -1,3 +1,5 @@
+import img from '../assets/images/logo.webp';
+
 export const products = [
   {
     id: 1,
@@ -6,7 +8,7 @@ export const products = [
     oldPrice: 30.0,
     discountUse: false,
     discount: 33,
-    image: 'https://i.imgur.com/bronze.png',
+    image: img,
     featured: true,
     description:
       'Acceso a beneficios básicos VIP, incluyendo chat exclusivo y recursos especiales.',
@@ -18,7 +20,7 @@ export const products = [
     oldPrice: 60.0,
     discountUse: false,
     discount: 33,
-    image: 'https://i.imgur.com/silver.png',
+    image: img,
     featured: true,
     description:
       'Beneficios mejorados con acceso a eventos especiales y contenido premium.',
@@ -30,7 +32,7 @@ export const products = [
     oldPrice: 90.0,
     discountUse: false,
     discount: 33,
-    image: 'https://i.imgur.com/gold.png',
+    image: img,
     featured: true,
     description:
       'Experiencia VIP completa con acceso prioritario y beneficios exclusivos.',
@@ -42,7 +44,7 @@ export const products = [
     oldPrice: 120.0,
     discountUse: false,
     discount: 33,
-    image: 'https://i.imgur.com/platinum.png',
+    image: img,
     featured: false,
     description:
       'Máximos beneficios VIP con acceso total a contenido exclusivo.',
@@ -54,7 +56,7 @@ export const products = [
     oldPrice: 30.0,
     discountUse: false,
     discount: 33,
-    image: 'https://i.imgur.com/diamond.png',
+    image: img,
     featured: false,
     description:
       'Experiencia premium con beneficios únicos y atención personalizada.',
@@ -66,7 +68,7 @@ export const products = [
     oldPrice: 180.0,
     discountUse: false,
     discount: 33,
-    image: 'https://i.imgur.com/emerald.png',
+    image: img,
     featured: false,
     description:
       'El nivel más alto de membresía con beneficios exclusivos y privilegios especiales.',
