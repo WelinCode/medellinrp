@@ -36,13 +36,17 @@ export default function Hero() {
         <div className="flex items-center justify-center">
           <ul className="flex gap-4">
             <li className="w-[50px] h-[50px] md:w-[62px] md:h-[62px] bg-[#1a2533] text-2xl md:text-3xl text-center flex items-center justify-center rounded-full text-[#3394ed] transition duration-300 hover:border-2 border-[#3394ed]">
-              <FaDiscord />
+              <a href="https://discord.gg/bRW4e328">
+                <FaDiscord />
+              </a>
             </li>
             <li className="w-[50px] h-[50px] md:w-[62px] md:h-[62px] bg-[#1a2533] text-2xl md:text-3xl text-center flex items-center justify-center rounded-full text-[#3394ed] hover:border-2 border-[#3394ed] transition duration-300">
               <FaYoutube />
             </li>
             <li className="w-[50px] h-[50px] md:w-[62px] md:h-[62px] bg-[#1a2533] text-2xl md:text-3xl text-center flex items-center justify-center rounded-full text-[#3394ed] hover:border-2 border-[#3394ed] transition duration-300">
-              <FaTiktok />
+              <a href="https://www.tiktok.com/@medellin_roleplayoficial?_t=ZT-8ugj4GqPH3u&_r=1">
+                <FaTiktok />
+              </a>
             </li>
           </ul>
         </div>
