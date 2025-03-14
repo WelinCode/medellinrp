@@ -35,7 +35,7 @@ export default function ProductModal({ product, onClose }) {
             <div className="space-y-6">
               <div className="flex items-center gap-4">
                 <span className="text-gray-400 line-through text-lg">
-                  USD$ {product.oldPrice.toFixed(2)}
+                  COP$ {product.oldPrice.toLocaleString()}
                 </span>
                 <span className="bg-[#3394ed] text-white px-3 py-1 rounded-full text-sm">
                   {product.discount}% OFF
@@ -43,7 +43,7 @@ export default function ProductModal({ product, onClose }) {
               </div>
 
               <div className="text-[#3394ed] text-3xl md:text-4xl font-bold">
-                USD$ {product.price.toFixed(2)}
+                COP$ {product.price.toLocaleString()}
               </div>
 
               <div className="text-gray-300">
@@ -56,10 +56,9 @@ export default function ProductModal({ product, onClose }) {
               <div className="text-gray-300">
                 <h3 className="text-xl font-semibold mb-3">Beneficios</h3>
                 <ul className="list-disc list-inside space-y-2">
-                  <li>Acceso a canales exclusivos en Discord</li>
-                  <li>Prioridad en el soporte técnico</li>
-                  <li>Contenido exclusivo y anticipado</li>
-                  <li>Eventos especiales VIP</li>
+                  {product.benefits.map((benefit, index) => (
+                    <li key={index}>{benefit}</li>
+                  ))}
                 </ul>
               </div>
             </div>

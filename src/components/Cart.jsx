@@ -28,7 +28,7 @@ export default function Cart() {
   const paypalOptions = {
     'client-id':
       'ATfBV8LY6ZA_eyq4S3dDtFrGtv7pbQkZ_KXBjWPGa6e2GOPZgso1x-Tfj05xzv-Nqzt9gq9QTOmBEoMY',
-    currency: 'USD',
+    currency: 'COP',
   };
 
   const createOrder = (data, actions) => {
@@ -174,7 +174,7 @@ export default function Cart() {
                         {item.name}
                       </h3>
                       <p className="text-[#3394ed]">
-                        USD$ {item.price.toFixed(2)}
+                        COP$ {item.price.toFixed(2)}
                       </p>
                       <div className="flex items-center gap-2 mt-2">
                         <button
@@ -213,7 +213,7 @@ export default function Cart() {
               <div className="flex justify-between items-center mb-4">
                 <span className="text-white">Total:</span>
                 <span className="text-[#3394ed] text-xl font-bold">
-                  USD$ {getCartTotal().toFixed(2)}
+                  COP$ {getCartTotal().toFixed(2)}
                 </span>
               </div>
               <PayPalScriptProvider options={paypalOptions}>

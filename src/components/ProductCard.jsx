@@ -26,7 +26,7 @@ const ProductCard = ({ product, onShowDetails }) => {
         {product.discountUse ? (
           <div className="flex items-center gap-2 mb-4">
             <span className="text-gray-400 line-through text-sm">
-              USD$ {product.oldPrice.toFixed(2)}
+              COP$ {product.oldPrice.toFixed(2)}
             </span>
             <span className="bg-[#3394ed] text-white text-xs px-2 py-1 rounded">
               {product.discount}% OFF
@@ -36,7 +36,7 @@ const ProductCard = ({ product, onShowDetails }) => {
 
         <div className="flex items-center justify-between">
           <span className="text-[#3394ed] text-2xl font-bold">
-            USD$ {product.price.toFixed(2)}
+            COP$ {product.price.toFixed(2)}
           </span>
           <div className="flex gap-2">
             <button
