@@ -99,7 +99,7 @@ export const products = [
   {
     id: 5,
     name: 'VIP Diamante',
-    price: 550000,
+    price: 55000,
     oldPrice: 120000,
     discountUse: false,
     discount: 33,
